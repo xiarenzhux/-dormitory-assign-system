@@ -1,0 +1,47 @@
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.csproj.AssemblyReference.cache
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.house_delete.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.house_insert.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.location.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.Login.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.manager.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.Properties.Resources.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.student.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.stu_insert.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.csproj.GenerateResource.cache
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.csproj.CoreCompileInputs.cache
+E:\visual studio\project\dormitory_manage\bin\Debug\dormitory_manage.exe.config
+E:\visual studio\project\dormitory_manage\bin\Debug\dormitory_manage.exe
+E:\visual studio\project\dormitory_manage\bin\Debug\dormitory_manage.pdb
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.exe
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.pdb
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.house_update.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.house_select.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.bedroom_insert.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.bedroom_update.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.bedroom_delete.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.bedroom_select.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.stu_select.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.stu_delete.resources
+E:\visual studio\project\dormitory_manage\obj\Debug\dormitory_manage.stu_update.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.csproj.AssemblyReference.cache
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.csproj.SuggestedBindingRedirects.cache
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.bedroom_delete.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.bedroom_insert.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.bedroom_select.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.bedroom_update.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.house_delete.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.house_insert.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.house_select.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.house_update.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.location.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.Login.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.manager.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.Properties.Resources.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.student.resources
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.csproj.GenerateResource.cache
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.csproj.CoreCompileInputs.cache
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.exe
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\obj\Debug\dormitory_manage.pdb
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\bin\Debug\dormitory_manage.exe.config
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\bin\Debug\dormitory_manage.exe
+D:\QQ\2503957902\FileRecv\学生公寓寝室分配管理系统刘一娜\学生公寓寝室分配管理系统刘一娜\软件原型\系统\dormitory_manage_1\dormitory_manage\bin\Debug\dormitory_manage.pdb
