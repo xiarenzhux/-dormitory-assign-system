@@ -45,15 +45,9 @@ namespace dormitory_manage
             house_Insert.Show();
         }
 
-        private void Insert_Student_ToolStripMenuItem_Click(object sender, EventArgs e)//添加学生信息
-        {
-            
-        }
+       
 
-        private void Student_Hosue_Assign_ToolStripMenuItem_Click(object sender, EventArgs e)//分配学生寝室
-        {
-            
-        }
+        
 
         private void Delete_House_ToolStripMenuItem_Click(object sender, EventArgs e)//删除公寓楼房
         {
@@ -90,27 +84,50 @@ namespace dormitory_manage
             del.Show();
         }
 
-        private void Select_Bedroom_ToolStripMenuItem_Click(object sender, EventArgs e)//查询公寓寝室
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            
+            textBox1.Visible = true;
+            label1.Visible = true;
+            textBox2.Visible = true;
+            label2.Visible = true;
+            button2.Visible = true;
         }
 
-
-        private void Update_student_ToolStripMenuItem1_Click(object sender, EventArgs e)//更新学生信息
+        private void button2_Click(object sender, EventArgs e)
         {
-            
+            string newPassword = textBox1.Text;
+            string confirmPassword = textBox1.Text;
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+            {
+
+                return;
+            }
+
+            // 验证新密码和确认密码
+            if (newPassword != confirmPassword)
+            {
+                MessageBox.Show("新密码和确认密码不匹配。请重试。");
+                return;
+            }
+
+            // 更新数据库中的密码
+            string updateSql = string.Format("update 工作人员 set 密码='{0}' where 工作号='{1}'", newPassword, this.number);
+            int rowsAffected = Sqlhelper.exexute(updateSql);
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("密码修改成功。");
+                textBox1.Visible = false;
+                label1.Visible = false;
+                textBox2.Visible = false;
+                label2.Visible = false;
+                button2.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("密码修改失败。");
+            }
         }
 
-        private void Delete_student_ToolStripMenuItem_Click(object sender, EventArgs e)//删除学生信息
-        {
-           
-        }
-
-        private void Select_student_ToolStripMenuItem_Click(object sender, EventArgs e)//查询学生信息
-        {
-           
-        }
-
-        
     }
 }

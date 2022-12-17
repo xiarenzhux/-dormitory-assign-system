@@ -31,9 +31,15 @@ namespace dormitory_manage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(manager));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button1 = new System.Windows.Forms.Button();
             this.num = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.主页ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.公寓楼房管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,6 +77,7 @@ namespace dormitory_manage
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer1.Panel1.BackgroundImage")));
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.num);
             this.splitContainer1.Panel1.Controls.Add(this.name);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
@@ -78,18 +85,34 @@ namespace dormitory_manage
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer1.Panel2.BackgroundImage")));
+            this.splitContainer1.Panel2.Controls.Add(this.button2);
+            this.splitContainer1.Panel2.Controls.Add(this.textBox2);
+            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.label2);
+            this.splitContainer1.Panel2.Controls.Add(this.label1);
             this.splitContainer1.Panel2.Controls.Add(this.menuStrip1);
             this.splitContainer1.Size = new System.Drawing.Size(1061, 587);
             this.splitContainer1.SplitterDistance = 156;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Location = new System.Drawing.Point(118, 103);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 32);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "修改密码";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // num
             // 
             this.num.AutoSize = true;
             this.num.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.num.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.num.Location = new System.Drawing.Point(131, 105);
+            this.num.Location = new System.Drawing.Point(131, 60);
             this.num.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.num.Name = "num";
             this.num.Size = new System.Drawing.Size(69, 20);
@@ -101,7 +124,7 @@ namespace dormitory_manage
             this.name.AutoSize = true;
             this.name.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.name.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.name.Location = new System.Drawing.Point(131, 68);
+            this.name.Location = new System.Drawing.Point(131, 17);
             this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(49, 20);
@@ -118,6 +141,57 @@ namespace dormitory_manage
             this.pictureBox1.Size = new System.Drawing.Size(98, 109);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2.Location = new System.Drawing.Point(618, 113);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 29);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "确认修改";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox2.Location = new System.Drawing.Point(451, 115);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(134, 27);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox1.Location = new System.Drawing.Point(451, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(134, 27);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(346, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 18);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "确认密码";
+            this.label2.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(364, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "新密码";
+            this.label1.Visible = false;
+            
             // 
             // menuStrip1
             // 
@@ -155,7 +229,6 @@ namespace dormitory_manage
             this.公寓楼房管理ToolStripMenuItem.Name = "公寓楼房管理ToolStripMenuItem";
             this.公寓楼房管理ToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
             this.公寓楼房管理ToolStripMenuItem.Text = "公寓楼房管理";
-
             // 
             // 添加公寓楼房ToolStripMenuItem
             // 
@@ -217,7 +290,6 @@ namespace dormitory_manage
             this.查询公寓寝室ToolStripMenuItem.Name = "查询公寓寝室ToolStripMenuItem";
             this.查询公寓寝室ToolStripMenuItem.Size = new System.Drawing.Size(238, 28);
             this.查询公寓寝室ToolStripMenuItem.Text = "查询公寓寝室";
-            this.查询公寓寝室ToolStripMenuItem.Click += new System.EventHandler(this.Select_Bedroom_ToolStripMenuItem_Click);
             // 
             // 修改公寓寝室ToolStripMenuItem
             // 
@@ -244,7 +316,6 @@ namespace dormitory_manage
             this.添加学生信息ToolStripMenuItem.Name = "添加学生信息ToolStripMenuItem";
             this.添加学生信息ToolStripMenuItem.Size = new System.Drawing.Size(238, 28);
             this.添加学生信息ToolStripMenuItem.Text = "添加学生信息";
-            this.添加学生信息ToolStripMenuItem.Click += new System.EventHandler(this.Insert_Student_ToolStripMenuItem_Click);
             // 
             // 删除学生信息ToolStripMenuItem
             // 
@@ -252,21 +323,18 @@ namespace dormitory_manage
             this.删除学生信息ToolStripMenuItem.Name = "删除学生信息ToolStripMenuItem";
             this.删除学生信息ToolStripMenuItem.Size = new System.Drawing.Size(238, 28);
             this.删除学生信息ToolStripMenuItem.Text = "删除学生信息";
-            this.删除学生信息ToolStripMenuItem.Click += new System.EventHandler(this.Delete_student_ToolStripMenuItem_Click);
             // 
             // 修改学生信息ToolStripMenuItem
             // 
             this.修改学生信息ToolStripMenuItem.Name = "修改学生信息ToolStripMenuItem";
             this.修改学生信息ToolStripMenuItem.Size = new System.Drawing.Size(238, 28);
             this.修改学生信息ToolStripMenuItem.Text = "查询学生信息";
-            this.修改学生信息ToolStripMenuItem.Click += new System.EventHandler(this.Select_student_ToolStripMenuItem_Click);
             // 
             // 修改学生信息ToolStripMenuItem1
             // 
             this.修改学生信息ToolStripMenuItem1.Name = "修改学生信息ToolStripMenuItem1";
             this.修改学生信息ToolStripMenuItem1.Size = new System.Drawing.Size(238, 28);
             this.修改学生信息ToolStripMenuItem1.Text = "修改学生信息";
-            this.修改学生信息ToolStripMenuItem1.Click += new System.EventHandler(this.Update_student_ToolStripMenuItem1_Click);
             // 
             // 学生寝室分配ToolStripMenuItem
             // 
@@ -275,7 +343,6 @@ namespace dormitory_manage
             this.学生寝室分配ToolStripMenuItem.Name = "学生寝室分配ToolStripMenuItem";
             this.学生寝室分配ToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
             this.学生寝室分配ToolStripMenuItem.Text = "学生寝室分配";
-            this.学生寝室分配ToolStripMenuItem.Click += new System.EventHandler(this.Student_Hosue_Assign_ToolStripMenuItem_Click);
             // 
             // manager
             // 
@@ -328,5 +395,11 @@ namespace dormitory_manage
         private System.Windows.Forms.ToolStripMenuItem 修改公寓楼房ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 修改公寓寝室ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 修改学生信息ToolStripMenuItem1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
