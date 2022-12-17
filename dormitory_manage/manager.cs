@@ -129,5 +129,10 @@ namespace dormitory_manage
             }
         }
 
+        private void Select_Bedroom_Click(object sender, EventArgs e)
+        {
+            bedroom_select sel = new bedroom_select();
+            sel.Show();
+        }
     }
 }

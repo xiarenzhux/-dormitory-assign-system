@@ -191,7 +191,6 @@ namespace dormitory_manage
             this.label1.TabIndex = 1;
             this.label1.Text = "新密码";
             this.label1.Visible = false;
-            
             // 
             // menuStrip1
             // 
@@ -290,6 +289,7 @@ namespace dormitory_manage
             this.查询公寓寝室ToolStripMenuItem.Name = "查询公寓寝室ToolStripMenuItem";
             this.查询公寓寝室ToolStripMenuItem.Size = new System.Drawing.Size(238, 28);
             this.查询公寓寝室ToolStripMenuItem.Text = "查询公寓寝室";
+            this.查询公寓寝室ToolStripMenuItem.Click += new System.EventHandler(this.Select_Bedroom_Click);
             // 
             // 修改公寓寝室ToolStripMenuItem
             // 
