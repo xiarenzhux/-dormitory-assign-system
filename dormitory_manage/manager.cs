@@ -75,7 +75,8 @@ namespace dormitory_manage
 
         private void Insert_Bedroom_ToolStripMenuItem_Click(object sender, EventArgs e)//插入公寓寝室
         {
-
+            bedroom_insert bed = new bedroom_insert();
+            bed.Show();
         }
 
         private void Update_Bedroom_ToolStripMenuItem_Click(object sender, EventArgs e)//更新公寓寝室
@@ -85,7 +86,8 @@ namespace dormitory_manage
 
         private void Delete_Bedroom_ToolStripMenuItem_Click(object sender, EventArgs e)//删除公寓寝室
         {
-            
+            bedroom_delete del = new bedroom_delete();
+            del.Show();
         }
 
         private void Select_Bedroom_ToolStripMenuItem_Click(object sender, EventArgs e)//查询公寓寝室
