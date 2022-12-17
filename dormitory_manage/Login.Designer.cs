@@ -31,32 +31,59 @@ namespace dormitory_manage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.Administrators = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Password = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.Account = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.Administrators);
+            this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.Password);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.Account);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(717, 421);
             this.panel1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(173, 234);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(132, 30);
+            this.textBox2.TabIndex = 10;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(173, 178);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(132, 30);
+            this.textBox1.TabIndex = 9;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(317, 236);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(108, 24);
+            this.checkBox1.TabIndex = 8;
+            this.checkBox1.Text = "隐藏密码";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -69,18 +96,18 @@ namespace dormitory_manage
             this.radioButton2.Text = "学生";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // Administrators
+            // radioButton1
             // 
-            this.Administrators.AutoSize = true;
-            this.Administrators.Checked = true;
-            this.Administrators.Location = new System.Drawing.Point(54, 294);
-            this.Administrators.Margin = new System.Windows.Forms.Padding(4);
-            this.Administrators.Name = "Administrators";
-            this.Administrators.Size = new System.Drawing.Size(87, 24);
-            this.Administrators.TabIndex = 6;
-            this.Administrators.TabStop = true;
-            this.Administrators.Text = "管理员";
-            this.Administrators.UseVisualStyleBackColor = true;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(54, 294);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(87, 24);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "管理员";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -102,15 +129,6 @@ namespace dormitory_manage
             this.label1.TabIndex = 3;
             this.label1.Text = "用户名";
             // 
-            // Password
-            // 
-            this.Password.Location = new System.Drawing.Point(179, 239);
-            this.Password.Margin = new System.Windows.Forms.Padding(4);
-            this.Password.Name = "Password";
-            this.Password.PasswordChar = '*';
-            this.Password.Size = new System.Drawing.Size(132, 30);
-            this.Password.TabIndex = 2;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(100, 357);
@@ -120,15 +138,7 @@ namespace dormitory_manage
             this.button1.TabIndex = 1;
             this.button1.Text = "登录";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Login_click);
-            // 
-            // Account
-            // 
-            this.Account.Location = new System.Drawing.Point(179, 176);
-            this.Account.Margin = new System.Windows.Forms.Padding(4);
-            this.Account.Name = "Account";
-            this.Account.Size = new System.Drawing.Size(132, 30);
-            this.Account.TabIndex = 0;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Login
             // 
@@ -152,13 +162,14 @@ namespace dormitory_manage
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox Account;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton Administrators;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

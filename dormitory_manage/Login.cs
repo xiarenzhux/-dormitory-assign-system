@@ -20,20 +20,32 @@ namespace dormitory_manage
             InitializeComponent();
         }
 
-        private void Login_click(object sender, EventArgs e)//登陆按钮
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            string stu_num = string.Format("select count(*) from 学生 where 学号='{0}' and 密码='{1}'", Account.Text, Password.Text);//创建查询数据库的语句
-            string manager_num = string.Format("select count(*) from 工作人员 where 工作号='{0}' and 密码='{1}'", Account.Text, Password.Text);//创建查询数据库的语句
+            if (checkBox1.Checked)
+            {
+                textBox2.PasswordChar = '*'; // Hide password
+            }
+            else
+            {
+                textBox2.PasswordChar = '\0'; // Show password
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql1 = string.Format("select count(*) from 学生 where 学号='{0}' and 密码='{1}'", textBox1.Text, textBox2.Text);
+            string sql2 = string.Format("select count(*) from 工作人员 where 工作号='{0}' and 密码='{1}'", textBox1.Text, textBox2.Text);
             //SqlCommand command = new SqlCommand(sql, con);
             //con.Open();
             //SqlDataReader r = command.ExecuteReader();
-        
-            if (Administrators.Checked)//管理员登录
+
+            if (radioButton1.Checked)//管理员登录
             {
-                int i=Convert.ToInt32(Sqlhelper.getScalar(manager_num));//接受用户输入的数据，判断是否正确
-                if (i == 1)//对就允许登录
+                int i = Convert.ToInt32(Sqlhelper.getScalar(sql2));
+                if (i == 1)
                 {
-                    manager manager = new manager(Account.Text);
+                    manager manager = new manager(textBox1.Text);
                     manager.Show();
                     //this.Close();
                 }
@@ -44,10 +56,10 @@ namespace dormitory_manage
             }
             else//学生登录
             {
-                int i= Convert.ToInt32(Sqlhelper.getScalar(stu_num));//接受用户输入的数据，判断是否正确
-                if (i==1)//对就允许登录
+                int i = Convert.ToInt32(Sqlhelper.getScalar(sql1));
+                if (i == 1)
                 {
-                    student student = new student(Account.Text);
+                    student student = new student(textBox1.Text);
                     student.Show();
                     //this.Close();
                 }
@@ -56,10 +68,6 @@ namespace dormitory_manage
                     MessageBox.Show("登录失败！");
                 }
             }
-            //r.Close();
-            //con.Close();
         }
-
-     
     }
 }

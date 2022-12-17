@@ -70,5 +70,59 @@ namespace dormitory_manage
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string newPassword = textBox10.Text;
+            string confirmPassword = textBox11.Text;
+            if (string.IsNullOrEmpty(textBox10.Text) || string.IsNullOrEmpty(textBox11.Text))
+            {
+
+                return;
+            }
+
+            // 验证新密码和确认密码
+            if (newPassword != confirmPassword)
+            {
+                MessageBox.Show("新密码和确认密码不匹配。请重试。");
+                return;
+            }
+
+            // 更新数据库中的密码
+            string updateSql = string.Format("update 学生 set 密码='{0}' where 学号='{1}'", newPassword, this.number);
+            int rowsAffected = Sqlhelper.exexute(updateSql);
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("密码修改成功。");
+                textBox10.Visible = false;
+                label1.Visible = false;
+                textBox11.Visible = false;
+                label13.Visible = false;
+                button2.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("密码修改失败。");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox10.Visible = true;
+            label1.Visible = true;
+            textBox11.Visible = true;
+            label13.Visible = true;
+            button2.Visible = true;
+        }
     }
 }
