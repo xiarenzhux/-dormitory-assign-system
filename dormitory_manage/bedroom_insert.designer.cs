@@ -31,6 +31,7 @@ namespace dormitory_manage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bedroom_insert));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.actual_num = new System.Windows.Forms.ComboBox();
             this.Expense = new System.Windows.Forms.ComboBox();
             this.allowed_num = new System.Windows.Forms.ComboBox();
             this.SC = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@ namespace dormitory_manage
             this.home_num = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.actual_num = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,10 +76,31 @@ namespace dormitory_manage
             this.panel1.Size = new System.Drawing.Size(805, 453);
             this.panel1.TabIndex = 0;
             // 
+            // actual_num
+            // 
+            this.actual_num.FormattingEnabled = true;
+            this.actual_num.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.actual_num.Location = new System.Drawing.Point(579, 124);
+            this.actual_num.Name = "actual_num";
+            this.actual_num.Size = new System.Drawing.Size(132, 28);
+            this.actual_num.TabIndex = 34;
+            // 
             // Expense
             // 
             this.Expense.FormattingEnabled = true;
             this.Expense.Items.AddRange(new object[] {
+            "1000",
+            "2000",
+            "3000",
+            "4000",
+            "5000",
             "5800",
             "6000",
             "6200",
@@ -95,12 +116,13 @@ namespace dormitory_manage
             // 
             this.allowed_num.FormattingEnabled = true;
             this.allowed_num.Items.AddRange(new object[] {
-            "1人",
-            "2人",
-            "3人",
-            "4人",
-            "5人",
-            "6人"});
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
             this.allowed_num.Location = new System.Drawing.Point(163, 192);
             this.allowed_num.Name = "allowed_num";
             this.allowed_num.Size = new System.Drawing.Size(132, 28);
@@ -229,21 +251,6 @@ namespace dormitory_manage
             this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 16;
             this.label1.Text = "公寓号";
-            // 
-            // comboBox1
-            // 
-            this.actual_num.FormattingEnabled = true;
-            this.actual_num.Items.AddRange(new object[] {
-            "1人",
-            "2人",
-            "3人",
-            "4人",
-            "5人",
-            "6人"});
-            this.actual_num.Location = new System.Drawing.Point(579, 124);
-            this.actual_num.Name = "comboBox1";
-            this.actual_num.Size = new System.Drawing.Size(132, 28);
-            this.actual_num.TabIndex = 34;
             // 
             // bedroom_insert
             // 

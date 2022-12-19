@@ -140,3 +140,5 @@ C:\Users\27890\Desktop\宿舍分配系统\dormitory-assign-system\dormitory_mana
 C:\Users\27890\Desktop\宿舍分配系统\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.exe
 C:\Users\27890\Desktop\宿舍分配系统\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.pdb
 C:\Users\27890\Desktop\宿舍分配系统\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.bedroom_update.resources
+C:\Users\LENOVO\Desktop\git寝室管理系统\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.bedroom_select.resources
+C:\Users\LENOVO\Desktop\git寝室管理系统\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.bedroom_update.resources
