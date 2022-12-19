@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace dormitory_manage
@@ -21,7 +14,7 @@ namespace dormitory_manage
         {
             string lcs = string.Format("select 楼层数 from 公寓楼房 where 公寓号='{0}'", house_num.Text);//创建查询数据库的语句
             int lc =(int) Sqlhelper.getScalar(lcs);//楼层数
-            floor_num.Text = lc.ToString();
+            Floor_num.Text = lc.ToString();
 
             string fjs = string.Format("select 房间数 from 公寓楼房 where 公寓号='{0}'", house_num.Text);//创建查询数据库的语句
             int  fj = (int)Sqlhelper.getScalar(fjs);//房间数
@@ -37,7 +30,7 @@ namespace dormitory_manage
 
             string xb1 = string.Format("select 性别 from 公寓楼房 where 公寓号='{0}'", house_num.Text);//创建查询数据库的语句
             string xb = (string)Sqlhelper.getScalar(xb1);//性别
-            sex.Text = xb;
+            Sex.Text = xb;
 
             string gzh = string.Format("select 工作号 from 公寓楼房 where 公寓号='{0}'", house_num.Text);//创建查询数据库的语句
             string gz = (string)Sqlhelper.getScalar(gzh);//工作号
@@ -46,7 +39,7 @@ namespace dormitory_manage
 
         private void Update_Click(object sender, EventArgs e)
         {
-            string house_sql_ask = string.Format("update 公寓楼房 set 楼层数='{0}',房间数='{1}',启用时间='{2}',关闭时间='{3}',性别='{4}',工作号='{5}' where 公寓号='{6}' ",floor_num.Text,home_num.Text,start_time.Text,close_time.Text,sex.Text,task_num.Text,house_num.Text);//创建查询数据库的语句
+            string house_sql_ask = string.Format("update 公寓楼房 set 楼层数='{0}',房间数='{1}',启用时间='{2}',关闭时间='{3}',性别='{4}',工作号='{5}' where 公寓号='{6}' ",Floor_num.Text,home_num.Text,start_time.Text,close_time.Text, Sex.Text,task_num.Text,house_num.Text);//创建查询数据库的语句
             int i = Sqlhelper.exexute(house_sql_ask);//接受用户输入的数据，判断是否正确
             if (i > 0)//接受用户输入的数据，判断是否正确
             {
@@ -62,6 +55,16 @@ namespace dormitory_manage
         private void Close_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

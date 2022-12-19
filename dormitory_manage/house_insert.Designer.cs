@@ -33,10 +33,8 @@ namespace dormitory_manage
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.home_num = new System.Windows.Forms.TextBox();
-            this.floot = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.sex = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.room_num = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,6 +44,8 @@ namespace dormitory_manage
             this.label6 = new System.Windows.Forms.Label();
             this.task_num = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.Sex = new System.Windows.Forms.ComboBox();
+            this.Floot = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +53,7 @@ namespace dormitory_manage
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(74, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 24);
+            this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "公寓号";
             // 
@@ -67,26 +67,19 @@ namespace dormitory_manage
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Insert_Click);
             // 
-            // textBox1
+            // home_num
             // 
             this.home_num.Location = new System.Drawing.Point(180, 52);
-            this.home_num.Name = "textBox1";
-            this.home_num.Size = new System.Drawing.Size(109, 35);
+            this.home_num.Name = "home_num";
+            this.home_num.Size = new System.Drawing.Size(109, 30);
             this.home_num.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.floot.Location = new System.Drawing.Point(180, 116);
-            this.floot.Name = "textBox2";
-            this.floot.Size = new System.Drawing.Size(109, 35);
-            this.floot.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(74, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 24);
+            this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "楼层数";
             // 
@@ -100,27 +93,20 @@ namespace dormitory_manage
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Close_Click);
             // 
-            // textBox3
-            // 
-            this.sex.Location = new System.Drawing.Point(180, 244);
-            this.sex.Name = "textBox3";
-            this.sex.Size = new System.Drawing.Size(109, 35);
-            this.sex.TabIndex = 9;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(74, 245);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 24);
+            this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "性 别";
             // 
-            // textBox4
+            // room_num
             // 
             this.room_num.Location = new System.Drawing.Point(180, 180);
-            this.room_num.Name = "textBox4";
-            this.room_num.Size = new System.Drawing.Size(109, 35);
+            this.room_num.Name = "room_num";
+            this.room_num.Size = new System.Drawing.Size(109, 30);
             this.room_num.TabIndex = 7;
             // 
             // label4
@@ -128,15 +114,15 @@ namespace dormitory_manage
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(74, 182);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 24);
+            this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "房间数";
             // 
-            // textBox5
+            // end_time
             // 
             this.end_time.Location = new System.Drawing.Point(600, 116);
-            this.end_time.Name = "textBox5";
-            this.end_time.Size = new System.Drawing.Size(109, 35);
+            this.end_time.Name = "end_time";
+            this.end_time.Size = new System.Drawing.Size(109, 30);
             this.end_time.TabIndex = 13;
             // 
             // label5
@@ -144,15 +130,15 @@ namespace dormitory_manage
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(442, 119);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 24);
+            this.label5.Size = new System.Drawing.Size(89, 20);
             this.label5.TabIndex = 12;
             this.label5.Text = "关闭时间";
             // 
-            // textBox6
+            // start_time
             // 
             this.start_time.Location = new System.Drawing.Point(600, 52);
-            this.start_time.Name = "textBox6";
-            this.start_time.Size = new System.Drawing.Size(109, 35);
+            this.start_time.Name = "start_time";
+            this.start_time.Size = new System.Drawing.Size(109, 30);
             this.start_time.TabIndex = 11;
             // 
             // label6
@@ -160,15 +146,15 @@ namespace dormitory_manage
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(442, 56);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 24);
+            this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "启用时间";
             // 
-            // textBox8
+            // task_num
             // 
             this.task_num.Location = new System.Drawing.Point(600, 179);
-            this.task_num.Name = "textBox8";
-            this.task_num.Size = new System.Drawing.Size(109, 35);
+            this.task_num.Name = "task_num";
+            this.task_num.Size = new System.Drawing.Size(109, 30);
             this.task_num.TabIndex = 15;
             // 
             // label8
@@ -176,28 +162,55 @@ namespace dormitory_manage
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(442, 183);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 24);
+            this.label8.Size = new System.Drawing.Size(69, 20);
             this.label8.TabIndex = 14;
             this.label8.Text = "工作号";
             // 
+            // Sex
+            // 
+            this.Sex.FormattingEnabled = true;
+            this.Sex.Items.AddRange(new object[] {
+            "男",
+            "女"});
+            this.Sex.Location = new System.Drawing.Point(180, 245);
+            this.Sex.Name = "Sex";
+            this.Sex.Size = new System.Drawing.Size(109, 28);
+            this.Sex.TabIndex = 16;
+            this.Sex.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBox1
+            // 
+            this.Floot.FormattingEnabled = true;
+            this.Floot.Items.AddRange(new object[] {
+            "1楼",
+            "2楼",
+            "3楼",
+            "4楼",
+            "5楼",
+            "6楼"});
+            this.Floot.Location = new System.Drawing.Point(180, 119);
+            this.Floot.Name = "comboBox1";
+            this.Floot.Size = new System.Drawing.Size(109, 28);
+            this.Floot.TabIndex = 17;
+            // 
             // house_insert
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(805, 453);
+            this.Controls.Add(this.Floot);
+            this.Controls.Add(this.Sex);
             this.Controls.Add(this.task_num);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.end_time);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.start_time);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.sex);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.room_num);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.floot);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.home_num);
             this.Controls.Add(this.button1);
@@ -220,10 +233,8 @@ namespace dormitory_manage
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox home_num;
-        private System.Windows.Forms.TextBox floot;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox sex;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox room_num;
         private System.Windows.Forms.Label label4;
@@ -233,5 +244,7 @@ namespace dormitory_manage
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox task_num;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox Sex;
+        private System.Windows.Forms.ComboBox Floot;
     }
 }

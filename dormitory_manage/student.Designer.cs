@@ -79,23 +79,23 @@ namespace dormitory_manage
             this.修改信息ToolStripMenuItem,
             this.注销ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(149, 88);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(139, 76);
             // 
             // picterToolStripMenuItem
             // 
             this.picterToolStripMenuItem.Name = "picterToolStripMenuItem";
-            this.picterToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
+            this.picterToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             // 
             // 修改信息ToolStripMenuItem
             // 
             this.修改信息ToolStripMenuItem.Name = "修改信息ToolStripMenuItem";
-            this.修改信息ToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
+            this.修改信息ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.修改信息ToolStripMenuItem.Text = "修改信息";
             // 
             // 注销ToolStripMenuItem
             // 
             this.注销ToolStripMenuItem.Name = "注销ToolStripMenuItem";
-            this.注销ToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
+            this.注销ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.注销ToolStripMenuItem.Text = "注销";
             // 
             // splitContainer1
@@ -229,6 +229,7 @@ namespace dormitory_manage
             // 
             this.textBox11.Location = new System.Drawing.Point(504, 25);
             this.textBox11.Name = "textBox11";
+            this.textBox11.PasswordChar = '*';
             this.textBox11.Size = new System.Drawing.Size(149, 30);
             this.textBox11.TabIndex = 41;
             this.textBox11.Visible = false;
@@ -237,6 +238,7 @@ namespace dormitory_manage
             // 
             this.textBox10.Location = new System.Drawing.Point(203, 25);
             this.textBox10.Name = "textBox10";
+            this.textBox10.PasswordChar = '*';
             this.textBox10.Size = new System.Drawing.Size(141, 30);
             this.textBox10.TabIndex = 40;
             this.textBox10.Visible = false;

@@ -26,7 +26,7 @@ namespace dormitory_manage
 
         private void Insert_Click(object sender, EventArgs e)
         {
-            string sql_insert = string.Format("insert into 公寓楼房(公寓号,楼层数,房间数,性别,工作号,启用时间,关闭时间) values('"+ home_num.Text+"',"+floot.Text+ "," + room_num.Text + ",'" + sex.Text + "','" + task_num.Text + "','" + start_time.Text + "','" + end_time.Text + "')");//创建查询数据库的语句
+            string sql_insert = string.Format("insert into 公寓楼房(公寓号,楼层数,房间数,性别,工作号,启用时间,关闭时间) values('"+ home_num.Text+"',"+Floot.Text+ "," + room_num.Text + ",'" + Sex.Text + "','" + task_num.Text + "','" + start_time.Text + "','" + end_time.Text + "')");//创建查询数据库的语句
             int i = Sqlhelper.exexute(sql_insert);
             if (i > 0)//接受用户输入的数据，判断是否成功
             {
@@ -44,5 +44,14 @@ namespace dormitory_manage
             this.Close();
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

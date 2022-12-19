@@ -64,6 +64,12 @@
     <Compile Include="bedroom_select.Designer.cs">
       <DependentUpon>bedroom_select.cs</DependentUpon>
     </Compile>
+    <Compile Include="bedroom_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bedroom_update.designer.cs">
+      <DependentUpon>bedroom_update.cs</DependentUpon>
+    </Compile>
     <Compile Include="house_delete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="bedroom_select.resx">
       <DependentUpon>bedroom_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bedroom_update.resx">
+      <DependentUpon>bedroom_update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="house_delete.resx">
       <DependentUpon>house_delete.cs</DependentUpon>

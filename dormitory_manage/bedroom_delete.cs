@@ -17,7 +17,7 @@ namespace dormitory_manage
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void select_Click(object sender, EventArgs e)//从数据库中查询寝室
         {
             string sql = string.Format("select * from 公寓寝室 where 寝室号='{0}'", textBox1.Text);
             dataGridView1.DataSource = getData(sql);
@@ -28,7 +28,7 @@ namespace dormitory_manage
             return dt;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void delete_Click(object sender, EventArgs e)//将查询到的寝室删除
         {
             string sql = string.Format("delete  from 公寓寝室 where 公寓号='{0}' and 寝室号='{1}'", dataGridView1.SelectedCells[0].Value.ToString(),dataGridView1.SelectedCells[1].Value.ToString());
             int i = Sqlhelper.exexute(sql);

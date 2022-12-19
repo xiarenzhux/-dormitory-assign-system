@@ -76,7 +76,7 @@ namespace dormitory_manage
             this.button2.TabIndex = 8;
             this.button2.Text = "查询";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.select_Click);
             // 
             // button1
             // 
@@ -87,7 +87,7 @@ namespace dormitory_manage
             this.button1.TabIndex = 5;
             this.button1.Text = "删除";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.delete_Click);
             // 
             // label1
             // 

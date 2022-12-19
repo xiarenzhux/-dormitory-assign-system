@@ -75,7 +75,8 @@ namespace dormitory_manage
 
         private void Update_Bedroom_ToolStripMenuItem_Click(object sender, EventArgs e)//更新公寓寝室
         {
-            
+            bedroom_update update = new bedroom_update();
+            update.Show();
         }
 
         private void Delete_Bedroom_ToolStripMenuItem_Click(object sender, EventArgs e)//删除公寓寝室
