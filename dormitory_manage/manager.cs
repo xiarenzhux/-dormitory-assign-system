@@ -135,5 +135,11 @@ namespace dormitory_manage
             bedroom_select sel = new bedroom_select();
             sel.Show();
         }
+
+        private void Student_Delete_Click(object sender, EventArgs e)
+        {
+            stu_delete del = new stu_delete();
+            del.Show();
+        }
     }
 }

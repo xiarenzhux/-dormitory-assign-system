@@ -323,6 +323,7 @@ namespace dormitory_manage
             this.删除学生信息ToolStripMenuItem.Name = "删除学生信息ToolStripMenuItem";
             this.删除学生信息ToolStripMenuItem.Size = new System.Drawing.Size(238, 28);
             this.删除学生信息ToolStripMenuItem.Text = "删除学生信息";
+            this.删除学生信息ToolStripMenuItem.Click += new System.EventHandler(this.Student_Delete_Click);
             // 
             // 修改学生信息ToolStripMenuItem
             // 
