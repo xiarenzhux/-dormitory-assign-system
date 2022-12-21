@@ -99,7 +99,7 @@ namespace dormitory_manage
             this.label1.TabIndex = 7;
             this.label1.Text = "请输入要删除的寝室号";
             // 
-            // textBox1
+            // num
             // 
             this.textBox1.Location = new System.Drawing.Point(276, 38);
             this.textBox1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);

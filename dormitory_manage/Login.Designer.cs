@@ -60,14 +60,14 @@ namespace dormitory_manage
             this.panel1.Size = new System.Drawing.Size(717, 421);
             this.panel1.TabIndex = 0;
             // 
-            // textBox2
+            // name
             // 
             this.textBox2.Location = new System.Drawing.Point(173, 234);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 30);
             this.textBox2.TabIndex = 10;
             // 
-            // textBox1
+            // num
             // 
             this.textBox1.Location = new System.Drawing.Point(173, 178);
             this.textBox1.Name = "textBox1";

@@ -131,7 +131,7 @@ namespace dormitory_manage
             this.label1.TabIndex = 10;
             this.label1.Text = "请输入要修改的公寓号";
             // 
-            // textBox1
+            // num
             // 
             this.home_num.Location = new System.Drawing.Point(277, 7);
             this.home_num.Margin = new System.Windows.Forms.Padding(7);
@@ -262,7 +262,7 @@ namespace dormitory_manage
             this.label2.TabIndex = 23;
             this.label2.Text = "可住人数";
             // 
-            // comboBox1
+            // sex
             // 
             this.Expense.FormattingEnabled = true;
             this.Expense.Items.AddRange(new object[] {

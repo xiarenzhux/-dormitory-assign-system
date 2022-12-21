@@ -77,7 +77,7 @@ namespace dormitory_manage
             this.label1.TabIndex = 2;
             this.label1.Text = "请输入要删除的公寓号";
             // 
-            // textBox1
+            // num
             // 
             this.house_num.Location = new System.Drawing.Point(265, 31);
             this.house_num.Margin = new System.Windows.Forms.Padding(5);
