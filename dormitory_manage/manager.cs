@@ -32,7 +32,7 @@ namespace dormitory_manage
 
         }
         /*
-        private void button1_Click(object sender, EventArgs e)
+        private void change_password(object sender, EventArgs e)
         {
             house_insert house = new house_insert();
             house.Show();
@@ -86,7 +86,7 @@ namespace dormitory_manage
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void change_password(object sender, EventArgs e)
         {
             textBox1.Visible = true;
             label1.Visible = true;
@@ -95,7 +95,7 @@ namespace dormitory_manage
             button2.Visible = true;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void correct_change(object sender, EventArgs e)
         {
             string newPassword = textBox1.Text;
             string confirmPassword = textBox1.Text;
@@ -140,6 +140,12 @@ namespace dormitory_manage
         {
             stu_delete del = new stu_delete();
             del.Show();
+        }
+
+        private void Student_Insert_Click(object sender, EventArgs e)
+        {
+            stu_insert stu_Insert = new stu_insert(number);
+            stu_Insert.Show();
         }
     }
 }

@@ -178,7 +178,7 @@ namespace dormitory_manage
             this.Sex.TabIndex = 16;
             this.Sex.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox1
+            // sex
             // 
             this.Floot.FormattingEnabled = true;
             this.Floot.Items.AddRange(new object[] {

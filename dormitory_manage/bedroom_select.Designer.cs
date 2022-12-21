@@ -67,7 +67,7 @@ namespace dormitory_manage
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
-            // textBox1
+            // num
             // 
             this.bedroom_text.Location = new System.Drawing.Point(464, 41);
             this.bedroom_text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -96,7 +96,7 @@ namespace dormitory_manage
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Select_Click);
             // 
-            // comboBox1
+            // sex
             // 
             this.Condition_Box.FormattingEnabled = true;
             this.Condition_Box.Items.AddRange(new object[] {

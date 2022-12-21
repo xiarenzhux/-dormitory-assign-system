@@ -99,7 +99,7 @@ namespace dormitory_manage
             this.label1.TabIndex = 7;
             this.label1.Text = "请输入要删除的学生学号";
             // 
-            // textBox1
+            // num
             // 
             this.stu_id.Location = new System.Drawing.Point(311, 38);
             this.stu_id.Margin = new System.Windows.Forms.Padding(7);

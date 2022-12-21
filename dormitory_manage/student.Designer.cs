@@ -234,7 +234,7 @@ namespace dormitory_manage
             this.textBox11.TabIndex = 41;
             this.textBox11.Visible = false;
             // 
-            // textBox10
+            // password
             // 
             this.textBox10.Location = new System.Drawing.Point(203, 25);
             this.textBox10.Name = "textBox10";
@@ -244,7 +244,7 @@ namespace dormitory_manage
             this.textBox10.Visible = false;
             this.textBox10.WordWrap = false;
             // 
-            // textBox9
+            // major_num
             // 
             this.textBox9.Location = new System.Drawing.Point(785, 107);
             this.textBox9.Margin = new System.Windows.Forms.Padding(4);
@@ -262,7 +262,7 @@ namespace dormitory_manage
             this.label10.TabIndex = 38;
             this.label10.Text = "专业";
             // 
-            // textBox5
+            // class_num
             // 
             this.textBox5.Location = new System.Drawing.Point(785, 195);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
@@ -317,7 +317,7 @@ namespace dormitory_manage
             this.label8.TabIndex = 32;
             this.label8.Text = "公寓号";
             // 
-            // textBox8
+            // phonenum
             // 
             this.textBox8.Location = new System.Drawing.Point(785, 285);
             this.textBox8.Margin = new System.Windows.Forms.Padding(4);
@@ -335,7 +335,7 @@ namespace dormitory_manage
             this.label9.TabIndex = 30;
             this.label9.Text = "联系方式";
             // 
-            // textBox4
+            // nation
             // 
             this.textBox4.Location = new System.Drawing.Point(445, 107);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
@@ -372,7 +372,7 @@ namespace dormitory_manage
             this.label4.Text = "性别";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox2
+            // name
             // 
             this.textBox2.Location = new System.Drawing.Point(113, 195);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -390,7 +390,7 @@ namespace dormitory_manage
             this.label3.TabIndex = 24;
             this.label3.Text = "姓名";
             // 
-            // textBox1
+            // num
             // 
             this.textBox1.Location = new System.Drawing.Point(113, 107);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
