@@ -338,6 +338,7 @@ namespace dormitory_manage
             this.修改学生信息ToolStripMenuItem1.Name = "修改学生信息ToolStripMenuItem1";
             this.修改学生信息ToolStripMenuItem1.Size = new System.Drawing.Size(238, 28);
             this.修改学生信息ToolStripMenuItem1.Text = "修改学生信息";
+            this.修改学生信息ToolStripMenuItem1.Click += new System.EventHandler(this.修改学生信息ToolStripMenuItem1_Click);
             // 
             // 学生寝室分配ToolStripMenuItem
             // 

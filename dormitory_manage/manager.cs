@@ -153,5 +153,11 @@ namespace dormitory_manage
             stu_select sel = new stu_select();
             sel.Show();
         }
+
+        private void 修改学生信息ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            stu_update update = new stu_update();
+            update.Show();
+        }
     }
 }

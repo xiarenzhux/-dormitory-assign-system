@@ -133,6 +133,12 @@
     <Compile Include="stu_select.designer.cs">
       <DependentUpon>stu_select.cs</DependentUpon>
     </Compile>
+    <Compile Include="stu_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stu_update.designer.cs">
+      <DependentUpon>stu_update.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="bedroom_delete.resx">
       <DependentUpon>bedroom_delete.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="stu_select.resx">
       <DependentUpon>stu_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stu_update.resx">
+      <DependentUpon>stu_update.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

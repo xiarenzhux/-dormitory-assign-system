@@ -10,7 +10,7 @@ namespace dormitory_manage
 {
     static  class Sqlhelper
     {
-        static string str = "Data Source=DESKTOP-EG4NDT5;Initial Catalog=学生公寓寝室分配;Integrated Security=True";
+        static string str = "Data Source=ZXCOMPUTER;Initial Catalog=学生公寓寝室分配;Integrated Security=True";
         static SqlConnection con = new SqlConnection(str);
         public static SqlDataReader getReader(string sql)
         {
