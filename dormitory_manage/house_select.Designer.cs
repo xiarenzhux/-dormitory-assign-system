@@ -107,7 +107,7 @@ namespace dormitory_manage
             this.comboBox1.Size = new System.Drawing.Size(160, 32);
             this.comboBox1.TabIndex = 0;
             // 
-            // dataGridView1
+            // select_num
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
