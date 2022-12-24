@@ -54,7 +54,7 @@ namespace dormitory_manage
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Select_Click);
             // 
-            // dataGridView1
+            // select_num
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

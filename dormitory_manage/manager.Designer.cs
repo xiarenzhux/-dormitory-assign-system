@@ -154,7 +154,7 @@ namespace dormitory_manage
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.correct_change);
             // 
-            // name
+            // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox2.Location = new System.Drawing.Point(451, 115);
@@ -163,7 +163,7 @@ namespace dormitory_manage
             this.textBox2.TabIndex = 4;
             this.textBox2.Visible = false;
             // 
-            // num
+            // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox1.Location = new System.Drawing.Point(451, 64);
@@ -331,6 +331,7 @@ namespace dormitory_manage
             this.修改学生信息ToolStripMenuItem.Name = "修改学生信息ToolStripMenuItem";
             this.修改学生信息ToolStripMenuItem.Size = new System.Drawing.Size(238, 28);
             this.修改学生信息ToolStripMenuItem.Text = "查询学生信息";
+            this.修改学生信息ToolStripMenuItem.Click += new System.EventHandler(this.Student_Select_Click);
             // 
             // 修改学生信息ToolStripMenuItem1
             // 

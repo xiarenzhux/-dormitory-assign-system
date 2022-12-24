@@ -147,5 +147,11 @@ namespace dormitory_manage
             stu_insert stu_Insert = new stu_insert(number);
             stu_Insert.Show();
         }
+
+        private void Student_Select_Click(object sender, EventArgs e)
+        {
+            stu_select sel = new stu_select();
+            sel.Show();
+        }
     }
 }

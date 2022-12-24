@@ -127,6 +127,12 @@
     <Compile Include="stu_insert.designer.cs">
       <DependentUpon>stu_insert.cs</DependentUpon>
     </Compile>
+    <Compile Include="stu_select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stu_select.designer.cs">
+      <DependentUpon>stu_select.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="bedroom_delete.resx">
       <DependentUpon>bedroom_delete.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="stu_insert.resx">
       <DependentUpon>stu_insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stu_select.resx">
+      <DependentUpon>stu_select.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,7 +1,7 @@
 ﻿
 namespace dormitory_manage
 {
-    partial class stu_delete
+    partial class stu_select
     {
         /// <summary>
         /// Required designer variable.
@@ -29,18 +29,18 @@ namespace dormitory_manage
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(stu_delete));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(stu_select));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.stu_id = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.stu_num = new System.Windows.Forms.ComboBox();
+            this.select_num = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.select_num)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -54,73 +54,75 @@ namespace dormitory_manage
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer1.Panel1.BackgroundImage")));
-            this.splitContainer1.Panel1.Controls.Add(this.button2);
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Controls.Add(this.stu_id);
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.stu_num);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
+            this.splitContainer1.Panel2.Controls.Add(this.select_num);
             this.splitContainer1.Size = new System.Drawing.Size(805, 453);
-            this.splitContainer1.SplitterDistance = 89;
+            this.splitContainer1.SplitterDistance = 100;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
-            // button2
+            // textBox1
             // 
-            this.button2.Location = new System.Drawing.Point(514, 32);
-            this.button2.Margin = new System.Windows.Forms.Padding(7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 42);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "查询";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Select_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(636, 32);
-            this.button1.Margin = new System.Windows.Forms.Padding(7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 46);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "删除";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Delete_Click);
+            this.textBox1.Location = new System.Drawing.Point(459, 40);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(132, 35);
+            this.textBox1.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 41);
+            this.label1.Location = new System.Drawing.Point(14, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 24);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "请输入要删除的学生学号";
+            this.label1.Size = new System.Drawing.Size(178, 24);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "请选择查询条件";
             // 
-            // num
+            // button1
             // 
-            this.stu_id.Location = new System.Drawing.Point(311, 38);
-            this.stu_id.Margin = new System.Windows.Forms.Padding(7);
-            this.stu_id.Name = "textBox1";
-            this.stu_id.Size = new System.Drawing.Size(175, 35);
-            this.stu_id.TabIndex = 6;
+            this.button1.Location = new System.Drawing.Point(638, 40);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 41);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "查询";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.select_click);
+            // 
+            // stu_num
+            // 
+            this.stu_num.FormattingEnabled = true;
+            this.stu_num.Items.AddRange(new object[] {
+            "学号",
+            "班级编号",
+            "专业编号"});
+            this.stu_num.Location = new System.Drawing.Point(214, 40);
+            this.stu_num.Margin = new System.Windows.Forms.Padding(5);
+            this.stu_num.Name = "comboBox1";
+            this.stu_num.Size = new System.Drawing.Size(212, 32);
+            this.stu_num.TabIndex = 8;
             // 
             // select_num
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(805, 359);
-            this.dataGridView1.TabIndex = 0;
+            this.select_num.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.select_num.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.select_num.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.select_num.Location = new System.Drawing.Point(0, 0);
+            this.select_num.Margin = new System.Windows.Forms.Padding(4);
+            this.select_num.Name = "dataGridView1";
+            this.select_num.RowHeadersWidth = 62;
+            this.select_num.RowTemplate.Height = 30;
+            this.select_num.Size = new System.Drawing.Size(805, 348);
+            this.select_num.TabIndex = 0;
             // 
-            // stu_delete
+            // stu_select
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,15 +130,15 @@ namespace dormitory_manage
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "stu_delete";
+            this.Name = "stu_select";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "学生信息删除";
+            this.Text = "查询学生信息";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.select_num)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -144,10 +146,10 @@ namespace dormitory_manage
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView select_num;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox stu_id;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox stu_num;
     }
 }
