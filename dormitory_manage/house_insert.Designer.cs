@@ -176,7 +176,6 @@ namespace dormitory_manage
             this.Sex.Name = "Sex";
             this.Sex.Size = new System.Drawing.Size(109, 28);
             this.Sex.TabIndex = 16;
-            this.Sex.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // sex
             // 

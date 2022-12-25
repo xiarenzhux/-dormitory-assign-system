@@ -50,7 +50,7 @@ namespace dormitory_manage
             this.button1.TabIndex = 1;
             this.button1.Text = "自动分配";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.auto_assign);
             // 
             // button2
             // 
@@ -61,7 +61,7 @@ namespace dormitory_manage
             this.button2.TabIndex = 2;
             this.button2.Text = "按专业分配";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.major_assgin);
             // 
             // dataGridView1
             // 
@@ -75,7 +75,6 @@ namespace dormitory_manage
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.Size = new System.Drawing.Size(805, 344);
             this.dataGridView1.TabIndex = 5;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // splitContainer1
             // 
@@ -91,7 +90,6 @@ namespace dormitory_manage
             this.splitContainer1.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer1.Panel1.BackgroundImage")));
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.button2);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 

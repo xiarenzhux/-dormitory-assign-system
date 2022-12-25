@@ -22,12 +22,12 @@ namespace dormitory_manage
         {
             if (Condition_Box.SelectedIndex == 0)//按公寓号查询
             {
-                string sql = string.Format("select * from 公寓寝室 where 公寓号='{0}'", bedroom_text.Text);//创建查询数据库的语句
+                string sql = string.Format("select * from 公寓寝室 where 公寓号 like '%'+'{0}'+'%'", bedroom_text.Text);//创建查询数据库的语句
                 dataGridView1.DataSource = getData(sql);
             }
             else//按寝室号查询
             {
-                string sql = string.Format("select * from 公寓寝室 where 寝室号='{0}'", bedroom_text.Text);//创建查询数据库的语句
+                string sql = string.Format("select * from 公寓寝室 where 寝室号 like '%{0}%';", bedroom_text.Text);//创建查询数据库的语句
                 dataGridView1.DataSource = getData(sql);
             }
         }

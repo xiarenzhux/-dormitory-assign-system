@@ -20,22 +20,22 @@ namespace dormitory_manage
             InitializeComponent();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void see_password(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
+            if (see.Checked)
             {
-                textBox2.PasswordChar = '*'; // Hide password
+                password.PasswordChar = '*'; // Hide password
             }
             else
             {
-                textBox2.PasswordChar = '\0'; // Show password
+                password.PasswordChar = '\0'; // Show password
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void login_click(object sender, EventArgs e)
         {
-            string sql1 = string.Format("select count(*) from 学生 where 学号='{0}' and 密码='{1}'", textBox1.Text, textBox2.Text);
-            string sql2 = string.Format("select count(*) from 工作人员 where 工作号='{0}' and 密码='{1}'", textBox1.Text, textBox2.Text);
+            string sql1 = string.Format("select count(*) from 学生 where 学号='{0}' and 密码='{1}'", textBox1.Text, password.Text);
+            string sql2 = string.Format("select count(*) from 工作人员 where 工作号='{0}' and 密码='{1}'", textBox1.Text, password.Text);
             //SqlCommand command = new SqlCommand(sql, con);
             //con.Open();
             //SqlDataReader r = command.ExecuteReader();

@@ -154,7 +154,7 @@ namespace dormitory_manage
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.correct_change);
             // 
-            // textBox2
+            // password
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox2.Location = new System.Drawing.Point(451, 115);

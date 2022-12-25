@@ -318,7 +318,7 @@ namespace dormitory_manage
             this.label2.TabIndex = 23;
             this.label2.Text = "姓名";
             // 
-            // textBox2
+            // password
             // 
             this.sName.Location = new System.Drawing.Point(82, 45);
             this.sName.Margin = new System.Windows.Forms.Padding(7);

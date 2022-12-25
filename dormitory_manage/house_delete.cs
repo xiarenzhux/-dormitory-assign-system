@@ -19,7 +19,7 @@ namespace dormitory_manage
        
         private void Select_Click(object sender, EventArgs e)
         {
-            string sql = string.Format("select * from 公寓楼房 where 公寓号='{0}'",house_num.Text);//创建查询数据库的语句
+            string sql = string.Format("select * from 公寓楼房 where 公寓号='%{0}%'", house_num.Text);//创建查询数据库的语句
             dataGridView1.DataSource=getData(sql);
         }
         DataTable getData(string sql)//接收数据
@@ -30,7 +30,9 @@ namespace dormitory_manage
 
         private void Delete_Click(object sender, EventArgs e)
         {
-                string sql = string.Format("delete  from 公寓楼房 where 公寓号='{0}'",dataGridView1.SelectedCells[0].Value.ToString() );//创建查询数据库的语句
+            if (MessageBox.Show("您真的要删除吗？", "此删除不可恢复", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                string sql = string.Format("delete  from 公寓楼房 where 公寓号='{0}'", dataGridView1.SelectedCells[0].Value.ToString());//创建查询数据库的语句
                 int i = Sqlhelper.exexute(sql);
                 if (i == 1)
                 {
@@ -42,6 +44,7 @@ namespace dormitory_manage
                 {
                     MessageBox.Show("删除失败！");
                 }
+            }
         }
 
     }

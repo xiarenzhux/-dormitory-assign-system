@@ -22,17 +22,17 @@ namespace dormitory_manage
         {
             if (stu_num.SelectedIndex == 0)//按学号查询
             {
-                string sql = string.Format("select * from 学生 where 学号='{0}'", textBox1.Text);
+                string sql = string.Format("select * from 学生 where 学号='%{0}%'", textBox1.Text);
                 select_num.DataSource = getData(sql);
             }
             else if(stu_num.SelectedIndex == 1)//按班级编号查询
             {
-                string sql = string.Format("select * from 学生 where 班级编号='{0}'", textBox1.Text);
+                string sql = string.Format("select * from 学生 where 班级编号='%{0}%'", textBox1.Text);
                 select_num.DataSource = getData(sql);
             }
             else //按专业编号查询
             {
-                string sql = string.Format("select * from 学生 where 专业编号='{0}'", textBox1.Text);
+                string sql = string.Format("select * from 学生 where 专业编号='%{0}%'", textBox1.Text);
                 select_num.DataSource = getData(sql);
             }
         }

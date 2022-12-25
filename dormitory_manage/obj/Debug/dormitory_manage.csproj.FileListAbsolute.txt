@@ -196,3 +196,6 @@ C:\Users\13592\Source\Repos\dormitory-assign-system\dormitory_manage\obj\Debug\d
 C:\Users\13592\Source\Repos\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.exe
 C:\Users\13592\Source\Repos\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.pdb
 C:\Users\13592\source\repos\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.location.resources
+C:\Users\LENOVO\Desktop\git寝室管理系统\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.location.resources
+C:\Users\LENOVO\Desktop\git寝室管理系统\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.stu_select.resources
+C:\Users\LENOVO\Desktop\git寝室管理系统\dormitory-assign-system\dormitory_manage\obj\Debug\dormitory_manage.stu_update.resources
