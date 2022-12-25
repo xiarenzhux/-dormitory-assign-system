@@ -159,5 +159,11 @@ namespace dormitory_manage
             stu_update update = new stu_update();
             update.Show();
         }
+
+        private void 学生寝室分配ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            location loca = new location(number);
+            loca.Show();
+        }
     }
 }

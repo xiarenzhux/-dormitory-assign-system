@@ -347,6 +347,7 @@ namespace dormitory_manage
             this.学生寝室分配ToolStripMenuItem.Name = "学生寝室分配ToolStripMenuItem";
             this.学生寝室分配ToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
             this.学生寝室分配ToolStripMenuItem.Text = "学生寝室分配";
+            this.学生寝室分配ToolStripMenuItem.Click += new System.EventHandler(this.学生寝室分配ToolStripMenuItem_Click);
             // 
             // manager
             // 
