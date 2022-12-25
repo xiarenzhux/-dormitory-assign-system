@@ -94,6 +94,12 @@
     <Compile Include="house_insert.Designer.cs">
       <DependentUpon>house_insert.cs</DependentUpon>
     </Compile>
+    <Compile Include="location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="location.designer.cs">
+      <DependentUpon>location.cs</DependentUpon>
+    </Compile>
     <Compile Include="manager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,11 @@
     <Compile Include="stu_update.designer.cs">
       <DependentUpon>stu_update.cs</DependentUpon>
     </Compile>
+    <Compile Include="学生公寓寝室分配DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>学生公寓寝室分配DataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="bedroom_delete.resx">
       <DependentUpon>bedroom_delete.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="house_update.resx">
       <DependentUpon>house_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="location.resx">
+      <DependentUpon>location.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -202,6 +216,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="学生公寓寝室分配DataSet.xsc">
+      <DependentUpon>学生公寓寝室分配DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="学生公寓寝室分配DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>学生公寓寝室分配DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="学生公寓寝室分配DataSet.xss">
+      <DependentUpon>学生公寓寝室分配DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -10,9 +10,9 @@ namespace dormitory_manage
 {
     static  class Sqlhelper
     {
-        static string str = "Data Source=ZXCOMPUTER;Initial Catalog=学生公寓寝室分配;Integrated Security=True";
+        static string str = "Data Source=ROG;Initial Catalog=学生公寓寝室分配;Integrated Security=True";//设置服务器名称
         static SqlConnection con = new SqlConnection(str);
-        public static SqlDataReader getReader(string sql)
+        public static SqlDataReader getReader(string sql)//读取数据库文件
         {
             try
             {
@@ -33,7 +33,7 @@ namespace dormitory_manage
                     con.Close();
             }
         }
-        public static int exexute(string sql)
+        public static int exexute(string sql)//数据被修改的行数
         {
             try
             {
@@ -76,7 +76,7 @@ namespace dormitory_manage
                     con.Close();
             }
         }
-        public static DataTable getTable(string sql)
+        public static DataTable getTable(string sql)//数据更新
         {
             try
             {
