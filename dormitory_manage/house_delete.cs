@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/************************************************************************************
+通过输入公寓号进行查询，然后选中相应词条后点击删除键即可删除，进行删除前会进行再次确认
+**************************************************************************************/
 namespace dormitory_manage
 {
     public partial class house_delete : Form
@@ -47,5 +50,9 @@ namespace dormitory_manage
             }
         }
 
+        private void house_num_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

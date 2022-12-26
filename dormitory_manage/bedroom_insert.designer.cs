@@ -203,7 +203,7 @@ namespace dormitory_manage
             this.button2.TabIndex = 21;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.BClose_Click);
+            this.button2.Click += new System.EventHandler(this.Close_Click);
             // 
             // bed_num
             // 
@@ -240,7 +240,7 @@ namespace dormitory_manage
             this.button1.TabIndex = 17;
             this.button1.Text = "添加";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.BInsert_Click);
+            this.button1.Click += new System.EventHandler(this.bedroom_Insert_Click);
             // 
             // label1
             // 

@@ -67,11 +67,11 @@ namespace dormitory_manage
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
-            // num
+            // house_text
             // 
             this.house_text.Location = new System.Drawing.Point(399, 40);
-            this.house_text.Name = "textBox1";
-            this.house_text.Size = new System.Drawing.Size(100, 35);
+            this.house_text.Name = "house_text";
+            this.house_text.Size = new System.Drawing.Size(100, 30);
             this.house_text.TabIndex = 3;
             // 
             // label1
@@ -80,7 +80,7 @@ namespace dormitory_manage
             this.label1.Location = new System.Drawing.Point(19, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 24);
+            this.label1.Size = new System.Drawing.Size(149, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "请选择查询条件";
             // 
@@ -95,7 +95,7 @@ namespace dormitory_manage
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Select_Click);
             // 
-            // sex
+            // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -104,10 +104,11 @@ namespace dormitory_manage
             this.comboBox1.Location = new System.Drawing.Point(205, 43);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 32);
+            this.comboBox1.Size = new System.Drawing.Size(160, 28);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // select_num
+            // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -122,7 +123,7 @@ namespace dormitory_manage
             // 
             // house_select
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 453);
             this.Controls.Add(this.splitContainer1);

@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 //using System.Data.SqlClient;
 
+/***********************************************************************************
+宿舍管理系统登陆界面，允许用户以管理员或者学生身份登陆，同时用户可以选择是否隐藏密码
+***********************************************************************************/
 namespace dormitory_manage
 {
     public partial class Login : Form
@@ -20,7 +23,7 @@ namespace dormitory_manage
             InitializeComponent();
         }
 
-        private void see_password(object sender, EventArgs e)
+       private void see_password(object sender, EventArgs e)
         {
             if (see.Checked)
             {
@@ -31,7 +34,6 @@ namespace dormitory_manage
                 password.PasswordChar = '\0'; // Show password
             }
         }
-
         private void login_click(object sender, EventArgs e)
         {
             string sql1 = string.Format("select count(*) from 学生 where 学号='{0}' and 密码='{1}'", textBox1.Text, password.Text);
@@ -68,6 +70,23 @@ namespace dormitory_manage
                     MessageBox.Show("登录失败！");
                 }
             }
+        }
+
+        private void Login_password(object sender, EventArgs e)
+        {
+            if (see.Checked)
+            {
+                password.PasswordChar = '*'; // Hide password
+            }
+            else
+            {
+                password.PasswordChar = '\0'; // Show password
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

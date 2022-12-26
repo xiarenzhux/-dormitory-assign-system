@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/************************************************************************
+学生登陆进去的展示界面，只显示用户的信息以及修改密码功能，没有任何操作权限
+*************************************************************************/
 namespace dormitory_manage
 {
     public partial class student : Form
@@ -123,6 +126,11 @@ namespace dormitory_manage
             textBox11.Visible = true;
             label13.Visible = true;
             button2.Visible = true;
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

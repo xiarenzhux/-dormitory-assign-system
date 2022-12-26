@@ -36,6 +36,7 @@ namespace dormitory_manage
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.home_num = new System.Windows.Forms.TextBox();
+            this.Expense = new System.Windows.Forms.ComboBox();
             this.actual_num = new System.Windows.Forms.ComboBox();
             this.allowed_num = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@ namespace dormitory_manage
             this.telephone = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Expense = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -101,11 +101,11 @@ namespace dormitory_manage
             this.label7.TabIndex = 13;
             this.label7.Text = "请输入要修改的寝室号";
             // 
-            // textBox7
+            // bed_num
             // 
             this.bed_num.Location = new System.Drawing.Point(277, 56);
             this.bed_num.Margin = new System.Windows.Forms.Padding(7);
-            this.bed_num.Name = "textBox7";
+            this.bed_num.Name = "bed_num";
             this.bed_num.Size = new System.Drawing.Size(175, 30);
             this.bed_num.TabIndex = 12;
             // 
@@ -119,7 +119,7 @@ namespace dormitory_manage
             this.button2.TabIndex = 11;
             this.button2.Text = "查询";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.BSelect_Click);
+            this.button2.Click += new System.EventHandler(this.bedroom_Select_Click);
             // 
             // label1
             // 
@@ -131,24 +131,39 @@ namespace dormitory_manage
             this.label1.TabIndex = 10;
             this.label1.Text = "请输入要修改的公寓号";
             // 
-            // num
+            // home_num
             // 
             this.home_num.Location = new System.Drawing.Point(277, 7);
             this.home_num.Margin = new System.Windows.Forms.Padding(7);
-            this.home_num.Name = "textBox1";
+            this.home_num.Name = "home_num";
             this.home_num.Size = new System.Drawing.Size(175, 30);
             this.home_num.TabIndex = 9;
+            // 
+            // Expense
+            // 
+            this.Expense.FormattingEnabled = true;
+            this.Expense.Items.AddRange(new object[] {
+            "5800",
+            "6000",
+            "6200",
+            "6400",
+            "6600",
+            "6800"});
+            this.Expense.Location = new System.Drawing.Point(186, 125);
+            this.Expense.Name = "Expense";
+            this.Expense.Size = new System.Drawing.Size(152, 28);
+            this.Expense.TabIndex = 37;
             // 
             // actual_num
             // 
             this.actual_num.FormattingEnabled = true;
             this.actual_num.Items.AddRange(new object[] {
-            "1人",
-            "2人",
-            "3人",
-            "4人",
-            "5人",
-            "6人"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
             this.actual_num.Location = new System.Drawing.Point(558, 65);
             this.actual_num.Name = "actual_num";
             this.actual_num.Size = new System.Drawing.Size(152, 28);
@@ -200,7 +215,7 @@ namespace dormitory_manage
             this.button1.TabIndex = 21;
             this.button1.Text = "修改";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.BUpdate_Click);
+            this.button1.Click += new System.EventHandler(this.bedroom_update_Click);
             // 
             // SC
             // 
@@ -261,21 +276,6 @@ namespace dormitory_manage
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 23;
             this.label2.Text = "可住人数";
-            // 
-            // sex
-            // 
-            this.Expense.FormattingEnabled = true;
-            this.Expense.Items.AddRange(new object[] {
-            "5800",
-            "6000",
-            "6200",
-            "6400",
-            "6600",
-            "6800"});
-            this.Expense.Location = new System.Drawing.Point(186, 125);
-            this.Expense.Name = "comboBox1";
-            this.Expense.Size = new System.Drawing.Size(152, 28);
-            this.Expense.TabIndex = 37;
             // 
             // bedroom_update
             // 

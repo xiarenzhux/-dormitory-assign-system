@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*******************************************
+通过完善公寓楼房相关信息可以实现公寓添加功能
+********************************************/
 namespace dormitory_manage
 {
     public partial class house_insert : Form
@@ -42,6 +45,11 @@ namespace dormitory_manage
         private void Close_Click(object sender, EventArgs e)//关闭
         {
             this.Close();
+        }
+
+        private void home_num_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

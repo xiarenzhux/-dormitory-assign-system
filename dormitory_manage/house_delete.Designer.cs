@@ -54,7 +54,7 @@ namespace dormitory_manage
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Select_Click);
             // 
-            // select_num
+            // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -73,17 +73,18 @@ namespace dormitory_manage
             this.label1.Location = new System.Drawing.Point(6, 38);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 24);
+            this.label1.Size = new System.Drawing.Size(209, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "请输入要删除的公寓号";
             // 
-            // num
+            // house_num
             // 
             this.house_num.Location = new System.Drawing.Point(265, 31);
             this.house_num.Margin = new System.Windows.Forms.Padding(5);
-            this.house_num.Name = "textBox1";
-            this.house_num.Size = new System.Drawing.Size(132, 35);
+            this.house_num.Name = "house_num";
+            this.house_num.Size = new System.Drawing.Size(132, 30);
             this.house_num.TabIndex = 1;
+            this.house_num.TextChanged += new System.EventHandler(this.house_num_TextChanged);
             // 
             // button1
             // 
@@ -123,7 +124,7 @@ namespace dormitory_manage
             // 
             // house_delete
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 453);
             this.Controls.Add(this.splitContainer1);

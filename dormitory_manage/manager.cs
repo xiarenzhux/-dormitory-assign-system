@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*******************************************************************************
+管理员界面，可以修改密码，同时拥有寝室，公寓以及学生的增删改查，以及学生分配功能
+*******************************************************************************/
 namespace dormitory_manage
 {
     public partial class manager : Form
@@ -164,6 +167,11 @@ namespace dormitory_manage
         {
             location loca = new location(number);
             loca.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

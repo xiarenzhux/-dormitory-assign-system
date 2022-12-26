@@ -60,25 +60,28 @@ namespace dormitory_manage
             this.panel1.Size = new System.Drawing.Size(717, 421);
             this.panel1.TabIndex = 0;
             // 
-            // name
+            // password
             // 
             this.password.Location = new System.Drawing.Point(173, 234);
-            this.password.Name = "textBox2";
+            this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(132, 30);
             this.password.TabIndex = 10;
             // 
-            // num
+            // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(173, 178);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 30);
             this.textBox1.TabIndex = 9;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // see
             // 
             this.see.AutoSize = true;
+            this.see.Checked = true;
+            this.see.CheckState = System.Windows.Forms.CheckState.Checked;
             this.see.Location = new System.Drawing.Point(317, 236);
-            this.see.Name = "checkBox1";
+            this.see.Name = "see";
             this.see.Size = new System.Drawing.Size(108, 24);
             this.see.TabIndex = 8;
             this.see.Text = "隐藏密码";
@@ -153,6 +156,7 @@ namespace dormitory_manage
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登录界面";
+            this.Load += new System.EventHandler(this.Login_password);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

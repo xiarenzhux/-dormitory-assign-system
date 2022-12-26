@@ -154,7 +154,7 @@ namespace dormitory_manage
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.correct_change);
             // 
-            // password
+            // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox2.Location = new System.Drawing.Point(451, 115);
@@ -171,6 +171,7 @@ namespace dormitory_manage
             this.textBox1.Size = new System.Drawing.Size(134, 27);
             this.textBox1.TabIndex = 3;
             this.textBox1.Visible = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
