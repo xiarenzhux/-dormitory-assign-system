@@ -46,23 +46,23 @@ namespace dormitory_manage
             {
                 string kzrs = string.Format("select 可住人数 from 公寓寝室 where 公寓号='{0}' and 寝室号='{1}'", home_num.Text, bed_num.Text);
                 int kz = (int)Sqlhelper.getScalar(kzrs);
-                allowed_num.Text = kz.ToString();//修改可住人数
+                allowed_num.Text = kz.ToString();//显示可住人数
 
                 string zsfy = string.Format("select 住宿费用 from 公寓寝室 where 公寓号='{0}' and 寝室号='{1}'", home_num.Text, bed_num.Text);
                 decimal zs = (decimal)Sqlhelper.getScalar(zsfy);
-                Expense.Text = zs.ToString();//修改住宿费用
+                Expense.Text = zs.ToString();//显示住宿费用
 
                 string dhh = string.Format("select 电话 from 公寓寝室 where 公寓号='{0}' and 寝室号='{1}'", home_num.Text, bed_num.Text);
                 string dh = (string)Sqlhelper.getScalar(dhh);
-                telephone.Text = dh;//修改电话
+                telephone.Text = dh;//显示电话
 
                 string szrs = string.Format("select 实住人数 from 公寓寝室 where 公寓号='{0}' and 寝室号='{1}'", home_num.Text, bed_num.Text);
                 int sz = (int)Sqlhelper.getScalar(szrs);
-                actual_num.Text = sz.ToString();//修改实住人数
+                actual_num.Text = sz.ToString();//显示实住人数
 
                 string zybh = string.Format("select 专业编号 from 公寓寝室 where 公寓号='{0}' and 寝室号='{1}'", home_num.Text, bed_num.Text);
                 string zy = (string)Sqlhelper.getScalar(zybh);
-                SC.Text = zy;//修改专业编号
+                SC.Text = zy;//显示专业编号
             }
             else//未找到该寝室信息时，进行提示
             {
@@ -89,6 +89,5 @@ namespace dormitory_manage
         {
             this.Close();
         }
-
     }
 }
