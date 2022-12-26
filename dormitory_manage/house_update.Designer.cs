@@ -120,6 +120,7 @@ namespace dormitory_manage
             this.house_num.Name = "house_num";
             this.house_num.Size = new System.Drawing.Size(175, 30);
             this.house_num.TabIndex = 6;
+            this.house_num.TextChanged += new System.EventHandler(this.house_num_TextChanged);
             // 
             // Floor_num
             // 

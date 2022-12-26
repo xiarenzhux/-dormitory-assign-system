@@ -47,7 +47,7 @@ namespace dormitory_manage
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -67,12 +67,12 @@ namespace dormitory_manage
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
-            // num
+            // bedroom_text
             // 
             this.bedroom_text.Location = new System.Drawing.Point(464, 41);
-            this.bedroom_text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bedroom_text.Name = "textBox1";
-            this.bedroom_text.Size = new System.Drawing.Size(132, 35);
+            this.bedroom_text.Margin = new System.Windows.Forms.Padding(4);
+            this.bedroom_text.Name = "bedroom_text";
+            this.bedroom_text.Size = new System.Drawing.Size(132, 30);
             this.bedroom_text.TabIndex = 7;
             // 
             // label1
@@ -81,40 +81,40 @@ namespace dormitory_manage
             this.label1.Location = new System.Drawing.Point(14, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 24);
+            this.label1.Size = new System.Drawing.Size(149, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "请选择查询条件";
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(689, 35);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 43);
             this.button1.TabIndex = 5;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Select_Click);
+            this.button1.Click += new System.EventHandler(this.bedroom_select_Click);
             // 
-            // sex
+            // Condition_Box
             // 
             this.Condition_Box.FormattingEnabled = true;
             this.Condition_Box.Items.AddRange(new object[] {
             "公寓号",
             "寝室号"});
             this.Condition_Box.Location = new System.Drawing.Point(202, 44);
-            this.Condition_Box.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Condition_Box.Name = "comboBox1";
-            this.Condition_Box.Size = new System.Drawing.Size(212, 32);
+            this.Condition_Box.Margin = new System.Windows.Forms.Padding(5);
+            this.Condition_Box.Name = "Condition_Box";
+            this.Condition_Box.Size = new System.Drawing.Size(212, 28);
             this.Condition_Box.TabIndex = 4;
             // 
-            // select_num
+            // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 30;
@@ -123,12 +123,12 @@ namespace dormitory_manage
             // 
             // bedroom_select
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 453);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "bedroom_select";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "查询公寓寝室";

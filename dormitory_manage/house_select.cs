@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*************************************************
+公寓楼房查询模块，通过输入公寓号或者性别就进行查询
+**************************************************/
 namespace dormitory_manage
 {
     public partial class house_select : Form
@@ -37,5 +40,9 @@ namespace dormitory_manage
             return dt;
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

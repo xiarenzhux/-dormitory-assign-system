@@ -34,7 +34,7 @@ namespace dormitory_manage
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bedroom_num = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -57,7 +57,7 @@ namespace dormitory_manage
             this.splitContainer1.Panel1.Controls.Add(this.button2);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.bedroom_num);
             // 
             // splitContainer1.Panel2
             // 
@@ -76,7 +76,7 @@ namespace dormitory_manage
             this.button2.TabIndex = 8;
             this.button2.Text = "查询";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.select_Click);
+            this.button2.Click += new System.EventHandler(this.bedroom_select_Click);
             // 
             // button1
             // 
@@ -87,7 +87,7 @@ namespace dormitory_manage
             this.button1.TabIndex = 5;
             this.button1.Text = "删除";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.delete_Click);
+            this.button1.Click += new System.EventHandler(this.bedroom_delete_Click);
             // 
             // label1
             // 
@@ -101,11 +101,11 @@ namespace dormitory_manage
             // 
             // num
             // 
-            this.textBox1.Location = new System.Drawing.Point(276, 38);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 35);
-            this.textBox1.TabIndex = 6;
+            this.bedroom_num.Location = new System.Drawing.Point(276, 38);
+            this.bedroom_num.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.bedroom_num.Name = "textBox1";
+            this.bedroom_num.Size = new System.Drawing.Size(175, 35);
+            this.bedroom_num.TabIndex = 6;
             // 
             // select_num
             // 
@@ -148,6 +148,6 @@ namespace dormitory_manage
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox bedroom_num;
     }
 }

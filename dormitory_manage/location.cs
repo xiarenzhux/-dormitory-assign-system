@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*****************************************************************************
+学生寝室分配模块，选中新添加的学生，可以选择自动分配以及按专业分配两种分配方式
+******************************************************************************/
 namespace dormitory_manage
 {
     public partial class location : Form

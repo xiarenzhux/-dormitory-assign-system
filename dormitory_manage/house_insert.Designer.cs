@@ -73,6 +73,7 @@ namespace dormitory_manage
             this.home_num.Name = "home_num";
             this.home_num.Size = new System.Drawing.Size(109, 30);
             this.home_num.TabIndex = 2;
+            this.home_num.TextChanged += new System.EventHandler(this.home_num_TextChanged);
             // 
             // label2
             // 
@@ -177,7 +178,7 @@ namespace dormitory_manage
             this.Sex.Size = new System.Drawing.Size(109, 28);
             this.Sex.TabIndex = 16;
             // 
-            // sex
+            // Floot
             // 
             this.Floot.FormattingEnabled = true;
             this.Floot.Items.AddRange(new object[] {
@@ -188,7 +189,7 @@ namespace dormitory_manage
             "5楼",
             "6楼"});
             this.Floot.Location = new System.Drawing.Point(180, 119);
-            this.Floot.Name = "comboBox1";
+            this.Floot.Name = "Floot";
             this.Floot.Size = new System.Drawing.Size(109, 28);
             this.Floot.TabIndex = 17;
             // 
